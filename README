@@ -1,0 +1,23 @@
+Configuration
+================
+
+Sipgate.user     = "your-account"
+Sipgate.password = "your-password"
+
+
+Usage
+============
+
+
+sip = Sipgate.new
+
+# send a pdf
+result = sip.fax(4912345678, File.read("document.pdf"))
+
+# check sending status
+status = sip.status(result.session_id)
+
+
+
+
+Copyright (c) 2009 Digineo GmbH (http://www.digineo.de/), released under the MIT license
