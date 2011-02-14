@@ -1,4 +1,4 @@
-class Sipgate::Exception < Exception
+class Sipgate::Exception < ::Exception
   
   attr_reader :code
   
